@@ -1,0 +1,54 @@
+.dashboard-wrapper .navbar-brand {
+    height: 60px;
+}
+
+.dashboard-wrapper .MuiDrawer-root .MuiToolbar-root.MuiToolbar-gutters {
+    background-color: var(--white-color);
+}
+
+.dashboard-wrapper,
+.dark-bg>div {
+    background-color: #000812;
+    color: #fff;
+}
+
+.dashboard-wrapper header,
+.dashboard-wrapper main {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.dashboard-wrapper header {
+    box-shadow: 0px 1px 4px rgb(100 116 139 / 12%);
+}
+
+
+
+.dashboard-wrapper .tab-item {
+    color: var(--white-color);
+    align-items: flex-start;
+    display: inline-block;
+    min-height: auto;
+}
+
+.dashboard-wrapper .tab-item.Mui-selected {
+    color: var(--dark-yellow-color);
+}
+
+.dashboard-wrapper .tab-item svg {
+    margin-right: 15px;
+    position: relative;
+    top: 1px;
+}
+
+.tab-wrapper {
+    margin-top: 40px;
+}
+
+.custom-drawer>div {
+    border-right: 0;
+}
+
+.table-wrapper p {
+    margin-top: 0;
+}

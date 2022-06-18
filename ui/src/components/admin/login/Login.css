@@ -1,0 +1,16 @@
+.admin-auth form {
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    margin-top: 300px;
+}
+
+button[type=submit]:focus {
+    outline: none;
+    border: none;
+    box-shadow: unset;
+    background-color: var(--dark-yellow-color);
+}
+
+.admin-auth form button[type=submit]:hover {
+    color: var(--white-color)
+}

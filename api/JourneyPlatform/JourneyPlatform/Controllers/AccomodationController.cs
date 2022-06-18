@@ -21,7 +21,7 @@ namespace JourneyPlatform.Controllers
         public JsonResult Get()
         {
             string query = @"
-               select AccomodationCategories from
+               select AccomodationId, AccomodationCategories from
                 dbo.Accomodation
                ";
             DataTable table = new DataTable();
@@ -84,7 +84,7 @@ namespace JourneyPlatform.Controllers
                 myConn.Open();
                 using (SqlCommand myCommand = new SqlCommand(query, myConn))
                 {
-                    myCommand.Parameters.AddWithValue("AccomodationId", acc.AccomodationId);
+                    myCommand.Parameters.AddWithValue("@AccomodationId", acc.AccomodationId);
                     myCommand.Parameters.AddWithValue("@AccomodationCategories", acc.AccomodationCategories);
                     myReader = myCommand.ExecuteReader();
                     table.Load(myReader);

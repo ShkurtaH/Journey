@@ -1,0 +1,11 @@
+.footer {
+    padding: 20px 0;
+}
+
+.footer * {
+    text-align: center;
+}
+
+.footer p {
+    margin-top: 0;
+}

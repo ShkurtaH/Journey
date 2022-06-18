@@ -1,0 +1,17 @@
+.custom-table {
+    margin-top: 20px;
+}
+
+.custom-table td img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: transparent;
+}
+
+.table>:not(:first-child) {
+    border-top: 1px solid var(--bs-table-active-bg);
+}
